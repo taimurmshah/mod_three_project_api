@@ -5,4 +5,8 @@ class Api::V1::MessagesController < ApplicationController
     render json: @messages
   end
 
+  def create
+    Message.create
+  end
+
 end

@@ -5,5 +5,12 @@ class Api::V1::UsersController < ApplicationController
     render json: @users
   end
 
+  def create
+    User.create(name: params[:name], language: params[:language])
+  end
+
+  def delete
+    
+  end
 
 end
