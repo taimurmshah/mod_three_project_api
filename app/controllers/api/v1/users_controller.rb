@@ -6,11 +6,12 @@ class Api::V1::UsersController < ApplicationController
   end
 
   def create
-    User.create(name: params[:name], language: params[:language])
+    @user = User.create(name: params[:name], language: params[:language])
+    render json: @user
   end
 
   def delete
-    
+
   end
 
 end
