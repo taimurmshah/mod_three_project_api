@@ -1,7 +1,5 @@
 Rails.application.routes.draw do
 
-  mount ActionCable.server => '/cable'
-
   namespace :api do
     namespace :v1 do
       resources :users, only: [:index, :create]
@@ -10,5 +8,6 @@ Rails.application.routes.draw do
     end
   end
 
+  mount ActionCable.server => '/cable'
 
 end

@@ -32,4 +32,5 @@ module ChatAppApi
     # Skip views, helpers and assets when generating a new resource.
     config.api_only = true
   end
+  # config.action_cable.mount_path = '/cable'
 end
