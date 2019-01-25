@@ -14,4 +14,13 @@ class Api::V1::UsersController < ApplicationController
 
   end
 
+
+  #how do i create a current_user variable and/or method
+  #when doing API and separate front-end?
+
+  #would it go in the controller or in the model?
+
+  #i believe I need this method/variable in order to establish
+  #the ActionCable connection... right?
+
 end
